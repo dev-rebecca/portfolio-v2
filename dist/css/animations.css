@@ -1,0 +1,85 @@
+nav {
+  margin-top: 30px;
+}
+
+a.slideIn { 
+  position: absolute;  
+  animation-name: hide, slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1; 
+  -moz-animation-name: hide, slideIn;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-iteration-count: 1; 
+  -webkit-animation-name: hide, slideIn;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1; 
+  -o-animation-name: hide, slideIn;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: ease-in;
+  -o-animation-iteration-count: 1; 
+  opacity: 1;
+} 
+a.slideIn.first {
+  right: 280px;
+  padding-right: 2px;
+  animation-delay: 0s, 0s;
+  -moz-animation-delay: 0s, 0s;
+  -webkit-animation-delay: 0s, 0s;
+  -o-animation-delay: 0s, 0s;
+}
+a.slideIn.second {
+  right: 160px;
+  animation-delay: 0s, 0.10s;
+  -moz-animation-delay: 0s, 0.10s;
+  -webkit-animation-delay: 0s, 0.10s;
+  -o-animation-delay: 0s, 0.10s;
+}
+a.slideIn.third {
+  animation-delay: 0s, 0.20s;
+  -moz-animation-delay: 0s, 0.20s;
+  -webkit-animation-delay: 0s, 0.20s;
+  -o-animation-delay: 0s, 0.20s;
+}
+@keyframes hide
+{ 
+  from { opacity: 0; } to { opacity: 0 }
+}
+@-moz-keyframes hide
+{ 
+  from { opacity: 0; } to { opacity: 0 }
+}
+@-webkit-keyframes hide
+{ 
+  from { opacity: 0; } to { opacity: 0 }
+}
+@-o-keyframes hide
+{ 
+  from { opacity: 0; } to { opacity: 0 }
+}
+@keyframes slideIn
+{ 
+    0% { opacity: 0; top: -100px; }
+    /* 1% { opacity: 1; top: -100px; } */
+  100% { opacity: 1; top: 30px; } 
+} 
+@-moz-keyframes slideIn
+{ 
+    0% { opacity: 0; top: -100px; }
+    /* 1% { opacity: 1; top: -100px; } */
+  100% { opacity: 1; top:  200px; } 
+} 
+@-webkit-keyframes slideIn
+{ 
+    0% { opacity: 0; top: -100px; }
+    /* 1% { opacity: 1; top: -100px; } */
+  100% { opacity: 1; top:  200px; } 
+} 
+@-o-keyframes slideIn
+{ 
+    0% { opacity: 0; top: -100px; }
+    /* 1% { opacity: 1; top: -100px; } */
+  100% { opacity: 1; top:  200px; } 
+} 

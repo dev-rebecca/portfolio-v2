@@ -5,18 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="./js.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="../css/styles.css">
   <title>Rebecca's Portfolio</title>
 </head>
 <body class="text-blue-900 bg-blue-50">
     
   <!-- Navbar -->
-  <nav class="grid mt-5 mr-10 text-blue-900 justify-items-end">
+  <nav class="grid pr-40 text-blue-900 justify-items-end">
     <span class="text-xl">
       <!-- <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> -->
-      <a href="#about" class="pr-2 uppercase">About</a>
-      <a href="#projects" class="px-2 uppercase border-l border-blue-900">Projects</a>
-      <a href="#contact" class="pl-2 uppercase border-l border-blue-900">Contact</a>
+      <a href="#about" class="pr-2 uppercase slideIn first">About</a>
+      <a href="#projects" class="px-2 uppercase border-l border-blue-900 slideIn second">Projects</a>
+      <a href="#contact" class="pl-2 uppercase border-l border-blue-900 slideIn third">Contact</a>
     </span>
   </nav>
 
@@ -24,7 +25,7 @@
   <main class="mx-32">
 
     <!-- Header -->
-    <section class="grid items-center min-h-screen mr-56 font-serif text-blue-900">
+    <section class="grid items-center min-h-screen mr-56 font-serif text-blue-900 js-show-on-scroll">
       <div class="grid grid-cols-3 mb-32 space-y-4">
         <div class="grid content-center col-span-2">
           <p class="mb-4 text-2xl tracking-wider">Hi, my name is</p>
@@ -42,32 +43,35 @@
       <div class="grid grid-cols-3">
         <div class="col-span-2 space-y-4">
 
-          <div class="flex flex-row">
+          <div class="flex flex-row js-show-on-scroll">
             <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">About</h2>
             <div class="w-full ml-4 border-b border-blue-900 mb-7"></div>
           </div>
           
-          <p>
-            After working in a couple of different industries, I finally bit the
-            bullet in January 2021 and decided to go after my passion of website
-            development, all guns blazing.
-          </p>
-          <p>
-            Fast forward to not even a year later – I’ve learned SO much and
-            somehow my interest in learning the tools of the trade has grown
-            even stronger. I’m hungry to create solutions for people with code.
-          </p>
-          <p>
-            I see full-stack web development as the best of both worlds… art VS
-            science. Applying technical knowledge with out-of-the-box thinking
-            and creativity.
-          </p>
-          <p>
-            My dream now is to find my forever home: a forward-thinking &
-            culture driven Brisbane-based company that allows me to hone my
-            skills and become the best version of myself every day.
-          </p>
-          <div class="grid grid-cols-2">
+          <div class="js-show-on-scroll">
+            <p>
+              After working in a couple of different industries, I finally bit the
+              bullet in January 2021 and decided to go after my passion of website
+              development, all guns blazing.
+            </p>
+            <p>
+              Fast forward to not even a year later – I’ve learned SO much and
+              somehow my interest in learning the tools of the trade has grown
+              even stronger. I’m hungry to create solutions for people with code.
+            </p>
+            <p>
+              I see full-stack web development as the best of both worlds… art VS
+              science. Applying technical knowledge with out-of-the-box thinking
+              and creativity.
+            </p>
+            <p>
+              My dream now is to find my forever home: a forward-thinking &
+              culture driven Brisbane-based company that allows me to hone my
+              skills and become the best version of myself every day.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 js-show-on-scroll">
             <div class="space-y-4">
               <p>A few technologies I know well:</p>
               <ul class="list-none">
@@ -102,7 +106,7 @@
     <section class="grid content-center min-h-screen pt-20 space-y-6" id="projects">
 
       <div class="w-2/3 pb-6">
-        <div class="flex flex-row">
+        <div class="flex flex-row js-show-on-scroll">
           <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">Projects</h2>
           <div class="w-full ml-4 border-b border-blue-900 mb-7"></div>
         </div>
@@ -123,22 +127,25 @@
           <!-- Wildlife Watcher -->
           <div class="grid grid-cols-2 pb-20">
             <!-- Wildlife Wacther Image -->
-            <div class="w-auto h-auto col-span-1 mr-12 bg-gray-200"></div>
+            <div class="w-auto h-auto col-span-1 mr-12 bg-gray-200 js-show-on-scroll"></div>
             <!-- Wildlife Wacther text -->
-            <div class="col-span-1 space-y-4">
-              <h3 class="font-serif text-2xl">Wildlife Watcher</h3>
-              <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              <p>
-                A labour of love, I made this app to fulfill a wish I had to keep
-                track of the wildlife in my local area.
-              </p>
-              <p>
-                I wanted to create the entire project with vanilla JavaScript to
-                ensure I had a depth of skill before moving onto learning front-end
-                frameworks.
-              </p>
-              <div class="grid grid-cols-2">
+            <div class="js-show-on-scroll">
+              <div class="col-span-1 mb-4 space-y-4">
+                <h3 class="font-serif text-2xl">Wildlife Watcher</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <p>
+                  A labour of love, I made this app to fulfill a wish I had to keep
+                  track of the wildlife in my local area.
+                </p>
+                <p>
+                  I wanted to create the entire project with vanilla JavaScript to
+                  ensure I had a depth of skill before moving onto learning front-end
+                  frameworks.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 js-show-on-scroll">
                 <div class="col-span-1">
                   <ul class="list-none">
                     <li>JavaScript</li>
@@ -162,7 +169,7 @@
         <div class="grid grid-cols-2">
           <!-- PHEM text -->
           <div>
-            <div class="space-y-4">
+            <div class="mb-4 space-y-4 js-show-on-scroll">
               <h3 class="font-serif text-2xl">PHEM</h3>
               <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
               <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -176,12 +183,13 @@
                 the one he wanted to use moving forward. I now look after Paul’s
                 site.. and something.
               </p>
-                <ul class="list-none">
+            </div>
+                <ul class="list-none js-show-on-scroll">
                   <li>Wordpress</li>
                   <li>Customised PHP theme</li>
                   <li>Extensions</li>
                 </ul>
-              </div>
+
           </div>
           <!-- PHEM Image -->
           <div class="w-auto h-auto ml-6 bg-gray-200"></div>
@@ -205,21 +213,21 @@
       
       <!-- <div class="flex flex-row"> -->
         <!-- <div class="w-full mr-4 border-b border-blue-900 mb-7"></div> -->
-        <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide text-center uppercase">Contact</h2>
+        <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide text-center uppercase js-show-on-scroll">Contact</h2>
         <!-- <div class="w-full ml-4 border-b border-blue-900 mb-7"></div> -->
       <!-- </div> -->
       
       <div class="grid grid-cols-2 justify-items-center">
-        <div class="bg-gray-200 rounded-full justify-self-start w-80 h-80"></div>
+        <div class="bg-gray-200 rounded-full js-show-on-scroll justify-self-start w-80 h-80"></div>
         <div class="grid items-center space-y-2">
-          <p class="text-center">
+          <p class="text-center js-show-on-scroll">
             If you’re seeing this you’ve probably received my CV with my full
             details. I’d love the opportunity to meet you for an interview and
             demonstrate my dedication first-hand.
           </p>
           <div class="grid self-start justify-self-center">
-            <button>Say hello</button>
-            <button>See my git</button>
+            <button class="js-show-on-scroll">Say hello</button>
+            <button class="js-show-on-scroll">See my git</button>
           </div>
         </div>
       </div>
