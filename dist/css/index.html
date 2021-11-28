@@ -12,29 +12,43 @@
 <body class="text-blue-900 bg-blue-50">
     
   <!-- Navbar -->
-  <nav class="grid pr-40 text-blue-900 justify-items-end">
+  <nav class="grid pr-40 text-indigo-400 justify-items-end">
     <span class="text-xl">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> -->
       <a href="#about" class="pr-2 uppercase slideIn first">About</a>
       <a href="#projects" class="px-2 uppercase border-l border-blue-900 slideIn second">Projects</a>
       <a href="#contact" class="pl-2 uppercase border-l border-blue-900 slideIn third">Contact</a>
     </span>
+    <div class="grid pl-8 justify-self-start">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      </div>
+    </div>
   </nav>
 
   <!-- Pages -->
   <main class="mx-32">
 
     <!-- Header -->
-    <section class="grid items-center min-h-screen mr-56 font-serif text-blue-900 js-show-on-scroll">
-      <div class="grid grid-cols-3 mb-32 space-y-4">
+    <section class="grid items-center min-h-screen mr-56">
+      <div class="grid grid-cols-3 space-y-4">
         <div class="grid content-center col-span-2">
-          <p class="mb-4 text-2xl tracking-wider">Hi, my name is</p>
-          <h1 class="mb-4 font-bold tracking-wide text-8xl">Rebecca Mansell</h1>
+          <p class="mb-4 font-serif text-2xl tracking-wider ">Hi, my name is</p>
+          <h1 class="mb-4 font-serif font-bold tracking-wide text-8xl">Rebecca Mansell</h1>
           <!-- <p class="font-serif text-4xl tracking-wide uppercase">Full-Stack Web Developer</p> -->
-          <p class="text-2xl tracking-wider">I love making things happen with code and creativity.</p>
+          <p class="font-serif text-2xl tracking-wider ">I love making things happen with code and creativity.</p>
+
+          <span class="grid mt-20 text-indigo-400 justify-self-center" id="scroll-arrow">
+            <p class="mb-3">Scroll</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="grid w-6 h-6 animate-bounce justify-self-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+            </svg>
+          </span>
+         
         </div>
-        <div class="grid ml-12 bg-gray-200 rounded-full justify-self-start w-96 h-96"></div>
+        <div class="z-50 grid ml-12 bg-gray-200 border rounded-full justify-self-start w-96 h-96"></div>
+        <!-- <div class="absolute bottom-0 right-0 w-1/2 h-72 mr-30 test"></div> -->
       </div>
+
     </section>
 
     <!-- About -->
@@ -45,10 +59,11 @@
 
           <div class="flex flex-row js-show-on-scroll">
             <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">About</h2>
-            <div class="w-full ml-4 border-b border-blue-900 mb-7"></div>
+            <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
+            <span id="theTarget"></span>
           </div>
           
-          <div class="js-show-on-scroll">
+          <div class="space-y-4 js-show-on-scroll">
             <p>
               After working in a couple of different industries, I finally bit the
               bullet in January 2021 and decided to go after my passion of website
@@ -70,7 +85,6 @@
               skills and become the best version of myself every day.
             </p>
           </div>
-
           <div class="grid grid-cols-2 js-show-on-scroll">
             <div class="space-y-4">
               <p>A few technologies I know well:</p>
@@ -101,14 +115,14 @@
         </div> -->
       </div>
     </section>
-
+    
     <!-- Projects -->
     <section class="grid content-center min-h-screen pt-20 space-y-6" id="projects">
 
       <div class="w-2/3 pb-6">
         <div class="flex flex-row js-show-on-scroll">
           <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">Projects</h2>
-          <div class="w-full ml-4 border-b border-blue-900 mb-7"></div>
+          <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
         </div>
 
           <!-- <div class="space-y-4">
@@ -226,8 +240,8 @@
             demonstrate my dedication first-hand.
           </p>
           <div class="grid self-start justify-self-center">
-            <button class="js-show-on-scroll">Say hello</button>
-            <button class="js-show-on-scroll">See my git</button>
+            <button class="px-3 py-2 mb-4 text-indigo-500 transition border border-indigo-400 rounded shadow-sm js-show-on-scroll hover:shadow-none">Say hello</button>
+            <button class="px-3 py-2 text-indigo-500 transition border border-indigo-400 rounded shadow-sm js-show-on-scroll hover:shadow-none">See my git</button>
           </div>
         </div>
       </div>

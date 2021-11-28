@@ -38,6 +38,7 @@ a.slideIn.second {
   -o-animation-delay: 0s, 0.10s;
 }
 a.slideIn.third {
+  right: 60px;
   animation-delay: 0s, 0.20s;
   -moz-animation-delay: 0s, 0.20s;
   -webkit-animation-delay: 0s, 0.20s;

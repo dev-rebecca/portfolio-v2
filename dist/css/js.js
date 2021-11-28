@@ -1,6 +1,10 @@
+
+// Fade in elements
+
 const callback = function (entries) {
+
   entries.forEach((entry) => {
-    console.log(entry);
+    // console.log(entry);
 
     if (entry.isIntersecting) {
       entry.target.classList.add("animate-fadeIn");
@@ -16,4 +20,16 @@ targets.forEach(function (target) {
   observer.observe(target);
 });
 
-console.log("hi");
+
+
+// Fade out "scroll down" arrow
+const target = document.querySelector('#theTarget');
+const arrrow = document.getElementById("scroll-arrow")
+
+document.addEventListener('scroll', () => {
+  if (window.scrollY >= target.getBoundingClientRect().top) {
+    // console.log('I have been reached');
+    scroll-arrrow.classList.add("animate-fadeOut");
+    scroll-arrrow.classList.add("opacity-0");
+  }
+})

@@ -1,15 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 .btn {
-  @apply px-3 py-2 transition bg-gray-700 rounded shadow-sm hover:shadow-none;
-  }
+  @apply px-3 py-2 text-white transition bg-indigo-400 rounded shadow-sm hover:shadow-none;
+  } */
 
 li:before {
   content: '\25B9';
   margin-right: 1em;
   font-size: 14px;
+}
+
+.test {
+  background-color: #eff6ff;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c4b5fd' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 @keyframes fadeIn {
@@ -65,3 +70,64 @@ li:before {
 .animate-fadeIn {
   animation: fadeIn 1s ease-in forwards;
 }
+
+
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut ease 2.5s;
+}
+
+/* .js-hide-on-scroll {
+  opacity: 0;
+} */
