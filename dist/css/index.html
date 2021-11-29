@@ -14,9 +14,9 @@
   <!-- Navbar -->
   <nav class="grid pr-40 text-indigo-400 justify-items-end">
     <span class="text-xl">
-      <a href="#about" class="pr-2 uppercase slideIn first">About</a>
-      <a href="#projects" class="px-2 uppercase border-l border-blue-900 slideIn second">Projects</a>
-      <a href="#contact" class="pl-2 uppercase border-l border-blue-900 slideIn third">Contact</a>
+      <a href="#about" class="pr-2 uppercase transition transform hover:text-indigo-600 hover:translate-y-2 slideIn first">About</a>
+      <a href="#projects" class="px-2 uppercase transform border-l-2 border-indigo-200 hover:text-indigo-600 hover:translate-y-2 slideIn second">Projects</a>
+      <a href="#contact" class="pl-2 uppercase transform border-l-2 border-indigo-200 hover:text-indigo-600 hover:translate-y-2 slideIn third">Contact</a>
     </span>
     <div class="grid pl-8 justify-self-start">
       <div>
@@ -29,10 +29,10 @@
   <main class="mx-32">
 
     <!-- Header -->
-    <section class="grid items-center min-h-screen mr-56">
-      <div class="grid grid-cols-3 space-y-4">
+    <section class="grid items-center min-h-screen mr-28 js-show-on-scroll">
+      <div class="grid grid-cols-3">
         <div class="grid content-center col-span-2">
-          <p class="mb-4 font-serif text-2xl tracking-wider ">Hi, my name is</p>
+          <p class="mb-4 font-serif text-2xl tracking-wider">Hi, my name is</p>
           <h1 class="mb-4 font-serif font-bold tracking-wide text-8xl">Rebecca Mansell</h1>
           <!-- <p class="font-serif text-4xl tracking-wide uppercase">Full-Stack Web Developer</p> -->
           <p class="font-serif text-2xl tracking-wider ">I love making things happen with code and creativity.</p>
@@ -45,7 +45,14 @@
           </span>
          
         </div>
-        <div class="z-50 grid ml-12 bg-gray-200 border rounded-full justify-self-start w-96 h-96"></div>
+
+        <div class="z-50 grid mb-36 w-96 h-96 justify-self-center">
+          <img src="imgs/computer.jpg" alt="me" height="500" width="500" class="rounded-full">
+        </div>
+        <span id="theTarget"></span>
+
+
+        <!-- <div class="z-50 grid ml-12 bg-gray-200 rounded-full justify-self-start w-96 h-96"></div> -->
         <!-- <div class="absolute bottom-0 right-0 w-1/2 h-72 mr-30 test"></div> -->
       </div>
 
@@ -60,7 +67,6 @@
           <div class="flex flex-row js-show-on-scroll">
             <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">About</h2>
             <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
-            <span id="theTarget"></span>
           </div>
           
           <div class="space-y-4 js-show-on-scroll">
@@ -88,7 +94,7 @@
           <div class="grid grid-cols-2 js-show-on-scroll">
             <div class="space-y-4">
               <p>A few technologies I know well:</p>
-              <ul class="list-none">
+              <ul class="text-indigo-500 list-none">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -102,7 +108,7 @@
                 Some technologies I’m currently working on improving my knowledge
                 of:
               </p>
-              <ul class="list-none">
+              <ul class="text-indigo-500 list-none">
                 <li>React</li>
                 <li>Node.js</li>
                 <li>Typescript</li>
@@ -141,13 +147,22 @@
           <!-- Wildlife Watcher -->
           <div class="grid grid-cols-2 pb-20">
             <!-- Wildlife Wacther Image -->
-            <div class="w-auto h-auto col-span-1 mr-12 bg-gray-200 js-show-on-scroll"></div>
+            <!-- <div class="w-auto h-auto col-span-1 mr-12 bg-gray-200 js-show-on-scroll"></div> -->
+            <div class="grid grid-cols-2 gap-1 mr-12">
+              <div>
+                <img src="imgs/wildlife-watcher.png" alt="PHEM Website" class="w-auto h-auto">
+              </div>
+              <div>
+                <img src="imgs/wildlife-watcher2.png" alt="PHEM Website" class="w-auto h-auto">
+              </div>
+              <!-- <img src="imgs/wildlife-watcher.png" alt="PHEM Website" class="w-auto h-auto"> -->
+            </div>
             <!-- Wildlife Wacther text -->
             <div class="js-show-on-scroll">
               <div class="col-span-1 mb-4 space-y-4">
                 <h3 class="font-serif text-2xl">Wildlife Watcher</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline text-indigo-400" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline text-indigo-400" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 <p>
                   A labour of love, I made this app to fulfill a wish I had to keep
                   track of the wildlife in my local area.
@@ -161,7 +176,7 @@
 
               <div class="grid grid-cols-2 js-show-on-scroll">
                 <div class="col-span-1">
-                  <ul class="list-none">
+                  <ul class="text-indigo-500 list-none">
                     <li>JavaScript</li>
                     <li>REST API</li>
                     <li>Tailwind CSS</li>
@@ -169,7 +184,7 @@
                   </ul>
                 </div>
                 <div class="col-span-1">
-                  <ul class="list-none">
+                  <ul class="text-indigo-500 list-none">
                     <li>MySQL</li>
                     <li>Google Maps API</li>
                     <li>Image handling</li>
@@ -179,14 +194,16 @@
             </div>
         </div>
 
+        <div class="w-full border-b-2 border-indigo-200"></div>
+
         <!-- PHEM -->
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 pt-20">
           <!-- PHEM text -->
           <div>
-            <div class="mb-4 space-y-4 js-show-on-scroll">
+            <div class="mb-4 mr-6 space-y-4 js-show-on-scrol">
               <h3 class="font-serif text-2xl">PHEM</h3>
-              <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline text-indigo-400" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline text-indigo-400" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               <p>
                 This was created based on a competition we had at TAFE to create a
                 website for Paul, a client in need of a Wordpress site for his ___
@@ -198,7 +215,7 @@
                 site.. and something.
               </p>
             </div>
-                <ul class="list-none js-show-on-scroll">
+                <ul class="text-indigo-500 list-none js-show-on-scroll">
                   <li>Wordpress</li>
                   <li>Customised PHP theme</li>
                   <li>Extensions</li>
@@ -206,7 +223,8 @@
 
           </div>
           <!-- PHEM Image -->
-          <div class="w-auto h-auto ml-6 bg-gray-200"></div>
+          <!-- <div class="w-auto h-auto ml-6 bg-gray-200"></div> -->
+          <img src="imgs/phem.png" alt="PHEM Website" height="350" width="700" class="mt-6">
         </div>
       </div>
     </section>
@@ -232,7 +250,11 @@
         </div>
         
         <div class="grid grid-cols-2 justify-items-center">
-          <div class="bg-gray-200 rounded-full js-show-on-scroll justify-self-start w-80 h-80"></div>
+          <!-- <div class="bg-gray-200 rounded-full js-show-on-scroll justify-self-start w-80 h-80"></div> -->
+          <div class="js-show-on-scroll justify-self-start w-80 h-80">
+            <img src="imgs/computer.jpg" alt="me" height="500" width="500" class="rounded-full">
+          </div>
+          
           <div class="grid items-center space-y-2">
             <p class="text-center js-show-on-scroll">
               If you’re seeing this you’ve probably received my CV with my full
