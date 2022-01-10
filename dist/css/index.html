@@ -11,7 +11,7 @@
   <title>Rebecca's Portfolio</title>
 </head>
 
-<body class="container leading-relaxed text-blue-900 bg-blue-50">
+<body class="leading-relaxed text-blue-900 bg-blue-50">
     
   <!-- Navbar -->
   <nav class="grid pr-40 text-indigo-400 justify-items-end">
@@ -32,7 +32,7 @@
   </nav>
 
   <!-- Sections -->
-  <main class="mx-8 md:mx-32">
+  <main class="w-full mx-8 md:w-auto md: md:mx-32">
 
     <!-- Section 1: Header -->
     <section class="grid items-center min-h-screen mr-28 js-show-on-scroll">
@@ -55,7 +55,7 @@
         </div>
 
         <!-- Header image -->
-        <div class="grid invisible mb-36 w-96 h-96 justify-self-center lg:visible">
+        <div class="grid invisible mb-36 w-96 h-96 md:ml-28 justify-self-center lg:visible">
           <img src="imgs/computer.png" alt="me" height="500" width="500" class="rounded-full">
         </div>
 
@@ -65,19 +65,19 @@
     </section>
 
     <!-- Section 2: About -->
-    <section class="grid content-center min-h-screen space-y-6" id="about">
+    <section class="grid content-center min-h-screen text-lg md:space-y-6 md:text-base" id="about">
 
-      <div class="grid grid-cols-3">
-        <div class="col-span-2 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 ">
+        <div class="col-span-1 space-y-1 md:space-y-4 md:col-span-2">
 
           <!-- About title -->
-          <div class="flex flex-row js-show-on-scroll">
+          <div class="flex flex-row mb-10 js-show-on-scroll md:mb-0">
             <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">About</h2>
             <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
           </div>
           
           <!-- About text -->
-          <div class="space-y-4 js-show-on-scroll">
+          <div class="space-y-4 md:text-md js-show-on-scroll">
             <p>
               After exploring a couple of different industries and career pathways, I finally bit the bullet in 2021 and decided to go after my passion of website development; all guns blazing.
             </p>
@@ -124,10 +124,10 @@
     </section>
     
     <!-- Section 3: Projects -->
-    <section class="grid content-center min-h-screen pt-20 space-y-6" id="projects">
+    <section class="grid content-center min-h-screen pt-20 space-y-6 text:lg md:text-base" id="projects">
 
       <!-- Projects title -->
-      <div class="w-2/3 pb-6">
+      <div class="w-full pb-6 md:w-2/3">
         <div class="flex flex-row js-show-on-scroll">
           <h2 class="mb-2 font-serif text-5xl font-bold tracking-wide uppercase">Projects</h2>
           <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
@@ -135,13 +135,13 @@
       </div>
 
       <!-- Wildlife Watcher -->
-      <div class="grid grid-cols-2 pb-20">
-        <div class="grid grid-cols-2 gap-1 mr-12">
+      <div class="grid grid-cols-1 pb-20 md:grid-cols-2 text:lg md:text-base">
+        <div class="grid grid-cols-1 gap-1 mr-0 md:mr-12 md:grid-cols-2">
           <div>
-            <img src="imgs/wildlife-watcher.png" alt="Wildlife Watcher screenshot 1" class="w-auto h-auto shadow">
+            <img src="imgs/wildlife-watcher.png" alt="Wildlife Watcher screenshot 1" class="hidden w-auto h-auto shadow md:flex">
           </div>
           <div>
-            <img src="imgs/wildlife-watcher2.png" alt="Wildlife Watcher screenshot 2" class="w-auto h-auto shadow"">
+            <img src="imgs/wildlife-watcher2.png" alt="Wildlife Watcher screenshot 2" class="hidden w-auto h-auto shadow md:flex">
           </div>
         </div>
 
@@ -197,7 +197,7 @@
       <div class="w-full border-b-2 border-indigo-200"></div>
 
       <!-- PHEM -->
-      <div class="grid grid-cols-2 pt-20">
+      <div class="grid pt-20 md:grid-cols-2 grod-cols-1">
         
         <!-- PHEM text -->
         <div>
@@ -229,12 +229,12 @@
         </div>
 
         <!-- PHEM Image -->
-        <img src="imgs/phem.png" alt="PHEM Website" height="350" width="700" class="mt-6 shadow">
+        <img src="imgs/phem.png" alt="PHEM Website" height="350" width="700" class="hidden mt-6 shadow md:flex">
       </div>
     </section>
 
     <!-- Section 3: Contact -->
-    <section class="grid content-center min-h-screen py-24 mx-36" id="contact">
+    <section class="grid content-center min-h-screen py-6 mx-0 md:py-24 md:mx-36" id="contact">
       
       <!-- Contact title -->
         <div class="flex flex-row pb-8">
@@ -243,9 +243,9 @@
           <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
         </div>
         
-        <div class="grid grid-cols-2 justify-items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
           <!-- Contact image -->
-          <div class="rounded-full js-show-on-scroll justify-self-start w-80 h-80">
+          <div class="hidden rounded-full js-show-on-scroll justify-self-start w-80 h-80 md:flex">
             <img src="imgs/headshot.png" alt="me" height="500" width="500" class="rounded-full">
           </div>
           
