@@ -10,20 +10,21 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍🦰</text></svg>">
   <title>Rebecca's Portfolio</title>
 </head>
-<body class="leading-relaxed text-blue-900 bg-blue-50">
+
+<body class="container leading-relaxed text-blue-900 bg-blue-50">
     
   <!-- Navbar -->
   <nav class="grid pr-40 text-indigo-400 justify-items-end">
 
     <!-- About / project / contact tabs -->
-    <span class="text-xl">
+    <span class="text-lg md:text-xl">
       <a href="#about" class="pr-2 uppercase transition transform hover:text-indigo-600 hover:translate-y-2 slideIn first">About</a>
       <a href="#projects" class="px-2 uppercase transform border-l-2 border-indigo-200 hover:text-indigo-600 hover:translate-y-2 slideIn second">Projects</a>
       <a href="#contact" class="pl-2 uppercase transform border-l-2 border-indigo-200 hover:text-indigo-600 hover:translate-y-2 slideIn third">Contact</a>
     </span>
 
     <!-- Cursive name -->
-    <div class="grid pl-8 justify-self-start">
+    <div class="grid invisible pl-8 justify-self-start md:visible">
       <div>
         <img src="imgs/cursive-name.png" alt="me" height="150" width="150" class="rounded-full">
       </div>
@@ -31,13 +32,13 @@
   </nav>
 
   <!-- Sections -->
-  <main class="mx-32">
+  <main class="mx-8 md:mx-32">
 
     <!-- Section 1: Header -->
     <section class="grid items-center min-h-screen mr-28 js-show-on-scroll">
       <div class="grid grid-cols-3">
         <div class="grid content-center col-span-2">
-          <h1 class="mb-4 font-serif font-bold tracking-wide text-8xl">Full-Stack Developer</h1>
+          <h1 class="mb-4 font-serif font-bold tracking-wide text-7xl md:text-8xl">Full-Stack Developer</h1>
           <span class="inline">
             <p class="inline font-serif text-2xl tracking-wider">I’m a </p>
             <p class="inline font-serif text-2xl font-bold tracking-wider">problem solver </p>
@@ -54,7 +55,7 @@
         </div>
 
         <!-- Header image -->
-        <div class="z-50 grid mb-36 w-96 h-96 justify-self-center">
+        <div class="grid invisible mb-36 w-96 h-96 justify-self-center lg:visible">
           <img src="imgs/computer.png" alt="me" height="500" width="500" class="rounded-full">
         </div>
 
