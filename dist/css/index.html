@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="./js.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/animations.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍🦰</text></svg>">
   <title>Rebecca Mansell</title>
 </head>
 
-<body class="leading-relaxed text-blue-900 bg-blue-50">
+<body class="mx-6 leading-relaxed text-blue-900 bg-blue-50">
     
   <!-- Navbar -->
-  <nav class="grid pr-40 text-indigo-400 justify-items-end">
+  <nav class="grid text-indigo-400 md:w-auto md:pr-40 justify-items-end">
 
     <!-- About / project / contact tabs -->
     <span class="text-lg md:text-xl">
@@ -32,18 +32,25 @@
   </nav>
 
   <!-- Sections -->
-  <main class="w-full mx-8 md:w-auto md: md:mx-32">
+  <main class="w-full overflow-x-hidden md:w-auto md:mx-32">
 
     <!-- Section 1: Header -->
-    <section class="grid items-center min-h-screen mr-28 js-show-on-scroll">
-      <div class="grid grid-cols-3">
-        <div class="grid content-center col-span-2">
-          <h1 class="mb-4 font-serif font-bold tracking-wide text-7xl md:text-8xl">Full-Stack Developer</h1>
-          <span class="inline">
+    <section class="grid items-center min-h-screen md:mr-28 js-show-on-scroll">
+
+      <div class="grid -mt-20 md:grid-cols-3 md:mt-0">
+        <div class="grid content-center md:col-span-2">
+          <h1 class="mb-4 font-serif text-6xl font-bold tracking-wide md:text-8xl">Full-Stack Developer</h1>
+
+          <span class="inline mt-6 md:mt-0">
             <p class="inline font-serif text-2xl tracking-wider">I’m a </p>
             <p class="inline font-serif text-2xl font-bold tracking-wider">problem solver </p>
-            <p class="inline font-serif text-2xl tracking-wider">with a penchant for creative thinking.</p>
+            <p class="block font-serif text-2xl tracking-wider md:inline">with a penchant for creative thinking.</p>
           </span>
+
+          <!-- Header image <= sm -->
+          <!-- <div class="grid mt-12 w-30 h-30 justify-self-center md:hidden">
+            <img src="imgs/computer.png" alt="me" height="250" width="250" class="rounded-full">
+          </div> -->
 
           <!-- Scroll -->
           <span class="grid mt-20 text-indigo-400 justify-self-center" id="scroll-arrow">
@@ -54,8 +61,8 @@
           </span>
         </div>
 
-        <!-- Header image -->
-        <div class="grid invisible mb-36 w-96 h-96 md:ml-28 justify-self-center lg:visible">
+        <!-- Header image >= md -->
+        <div class="hidden ld:grid mb-36 w-96 h-96 md:ml-28 justify-self-center lg:block">
           <img src="imgs/computer.png" alt="me" height="500" width="500" class="rounded-full">
         </div>
 
