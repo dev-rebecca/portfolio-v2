@@ -11,20 +11,20 @@
   <title>Rebecca Mansell</title>
 </head>
 
-<body class="mx-6 leading-relaxed text-blue-900 bg-blue-50">
+<body class="mx-6 leading-relaxed text-blue-900 bg-blue-50 lg:bg-purple-400 md:bg-yellow-400 xl:bg-pink-800">
     
   <!-- Navbar -->
-  <nav class="grid text-indigo-400 md:w-auto md:pr-40 justify-items-end">
+  <nav class="grid text-indigo-400 justify-self-center md:w-auto md:pr-40 md:justify-items-end">
 
     <!-- About / project / contact tabs -->
-    <span class="text-lg md:text-xl">
+    <span class="text-lg text-center md:text-xl">
       <a href="#about" class="pr-2 uppercase transition transform hover:text-indigo-600 hover:translate-y-2 slideIn first">About</a>
       <a href="#projects" class="px-2 uppercase transform border-l-2 border-indigo-200 hover:text-indigo-600 hover:translate-y-2 slideIn second">Projects</a>
       <a href="#contact" class="pl-2 uppercase transform border-l-2 border-indigo-200 hover:text-indigo-600 hover:translate-y-2 slideIn third">Contact</a>
     </span>
 
     <!-- Cursive name -->
-    <div class="grid invisible pl-8 justify-self-start md:visible">
+    <div class="grid invisible md:pl-8 justify-self-start md:visible">
       <div>
         <img src="imgs/cursive-name.png" alt="me" height="150" width="150" class="rounded-full">
       </div>
@@ -32,12 +32,12 @@
   </nav>
 
   <!-- Sections -->
-  <main class="w-full overflow-x-hidden md:w-auto md:mx-32">
+  <main class="w-full overflow-x-hidden md:w-auto md:mx-20">
 
     <!-- Section 1: Header -->
     <section class="grid items-center min-h-screen md:mr-28 js-show-on-scroll">
 
-      <div class="grid -mt-20 md:grid-cols-3 md:mt-0">
+      <div class="grid md:grid-cols-3 md:mt-0">
         <div class="grid content-center md:col-span-2">
           <h1 class="mb-4 font-serif text-6xl font-bold tracking-wide md:text-8xl">Full-Stack Developer</h1>
 
@@ -75,7 +75,7 @@
     <section class="grid content-center min-h-screen text-lg md:space-y-6 md:text-base" id="about">
 
       <div class="grid grid-cols-1 md:grid-cols-3 ">
-        <div class="col-span-1 space-y-1 md:space-y-4 md:col-span-2">
+        <div class="col-span-1 space-y-3 md:space-y-4 md:col-span-2">
 
           <!-- About title -->
           <div class="flex flex-row mb-10 js-show-on-scroll md:mb-0">
@@ -91,16 +91,16 @@
             <p>
               Just one year later, I’ve learned so much, yet my eagerness for learning the tools of the trade has grown even stronger. I’m hungry to provide solutions for people with my code!
             </p>
-            <p>
+            <p class="hidden md:block">
               I see website development as the best of both worlds… Applying technical knowledge with out-of-the-box thinking and creativity.
             </p>
-            <p>
+            <p class="hidden md:block">
               My mission now is to utilise my abilities with a culture-driven Brisbane-based company that I can call home.
             </p>
           </div>
 
           <!-- About bullets -->
-          <div class="grid grid-cols-2 js-show-on-scroll">
+          <div class="md:grid md:grid-cols-2 js-show-on-scroll">
             <div class="space-y-4">
               <p>A few technologies I know well:</p>
               <ul class="text-indigo-500 list-none">
@@ -115,7 +115,7 @@
               </ul>
             </div>
 
-            <div class="space-y-4">
+            <div class="mt-4 space-y-4 md:mt-0">
               <p>
                 I’m currently working on improving my knowledge of:
               </p>
@@ -142,7 +142,7 @@
       </div>
 
       <!-- Wildlife Watcher -->
-      <div class="grid grid-cols-1 pb-20 md:grid-cols-2 text:lg md:text-base">
+      <div class="grid grid-cols-1 pb-12 text-lg md:pb-20 md:text-base md:grid-cols-2 text:lg">
         <div class="grid grid-cols-1 gap-1 mr-0 md:mr-12 md:grid-cols-2">
           <div>
             <img src="imgs/wildlife-watcher.png" alt="Wildlife Watcher screenshot 1" class="hidden w-auto h-auto shadow md:flex">
@@ -184,7 +184,8 @@
             <div class="col-span-1">
               <ul class="text-indigo-500 list-none">
                 <li>JavaScript</li>
-                <li>Google Maps API</li>
+                <li class="flex md:hidden">Google Maps</li>
+                <li class="hidden md:flex">Google Maps API</li>
                 <li>Tailwind CSS</li>
                 <li>Image handling</li>
               </ul>
@@ -204,11 +205,11 @@
       <div class="w-full border-b-2 border-indigo-200"></div>
 
       <!-- PHEM -->
-      <div class="grid pt-20 md:grid-cols-2 grod-cols-1">
+      <div class="grid pt-12 md:pt-20 md:grid-cols-2 grod-cols-1">
         
         <!-- PHEM text -->
         <div>
-          <div class="mb-4 mr-6 space-y-4 js-show-on-scrol">
+          <div class="mb-4 mr-6 space-y-4 text-lg js-show-on-scrol md:text-base">
             <h3 class="font-serif text-2xl">PHEM - Mechatronics Engineering</h3>
             
             <a href="https://phem.com.au"  class="inline text-indigo-400">
@@ -229,7 +230,7 @@
           </div>
 
           <!-- PHEM bullets -->
-          <ul class="text-indigo-500 list-none js-show-on-scroll">
+          <ul class="text-lg text-indigo-500 list-none js-show-on-scroll md:text-base">
             <li>Wordpress</li>
             <li>Customised PHP theme</li>
           </ul>
@@ -241,7 +242,7 @@
     </section>
 
     <!-- Section 3: Contact -->
-    <section class="grid content-center min-h-screen py-6 mx-0 md:py-24 md:mx-36" id="contact">
+    <section class="grid content-center min-h-screen mx-0 md:py-24 lg:mx-28 xl:mx-48 " id="contact">
       
       <!-- Contact title -->
         <div class="flex flex-row pb-8">
@@ -252,7 +253,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
           <!-- Contact image -->
-          <div class="hidden rounded-full js-show-on-scroll justify-self-start w-80 h-80 md:flex">
+          <div class="hidden rounded-full js-show-on-scroll justify-self-start w-70 h-70 lg:w-80 lg:h-80 md:flex">
             <img src="imgs/headshot.png" alt="me" height="500" width="500" class="rounded-full">
           </div>
           
