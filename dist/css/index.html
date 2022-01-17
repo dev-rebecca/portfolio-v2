@@ -11,10 +11,10 @@
   <title>Rebecca Mansell</title>
 </head>
 
-<body class="mx-6 leading-relaxed text-blue-900 sm:mx-10 bg-blue-50 lg:bg-purple-400 md:bg-yellow-400 xl:bg-pink-800 sm:bg-green-500">
+<body class="mx-6 text-lg leading-relaxed text-blue-900 sm:text-base sm:mx-10 md:mx-9 lg:mx-8 bg-blue-50 lg:bg-purple-100 md:bg-yellow-100 xl:bg-pink-100 sm:bg-green-200">
     
   <!-- Navbar -->
-  <nav class="grid text-indigo-400 justify-self-center md:w-auto md:pr-40 md:justify-items-end">
+  <nav class="grid text-indigo-400 justify-self-center md:pr-40 md:justify-items-end">
 
     <!-- About / project / contact tabs -->
     <span class="text-lg text-center md:text-xl">
@@ -24,7 +24,7 @@
     </span>
 
     <!-- Cursive name -->
-    <div class="grid invisible md:pl-8 justify-self-start md:visible">
+    <div class="grid invisible md:pl-8 justify-self-start sm:visible">
       <div>
         <img src="imgs/cursive-name.png" alt="me" height="150" width="150" class="rounded-full">
       </div>
@@ -32,14 +32,14 @@
   </nav>
 
   <!-- Sections -->
-  <main class="w-full overflow-x-hidden md:w-auto md:mx-20">
+  <main class="w-full mx-auto overflow-x-hidden md:w-auto md:mx-10">
 
     <!-- Section 1: Header -->
     <section class="grid items-center min-h-screen md:mr-28 js-show-on-scroll">
 
       <div class="grid md:grid-cols-3 md:mt-0">
         <div class="grid content-center md:col-span-2">
-          <h1 class="mb-4 font-serif text-6xl font-bold tracking-wide md:text-8xl">Full-Stack Developer</h1>
+          <h1 class="mb-4 font-serif text-6xl font-bold tracking-wide sm:text-7xl xl:text-8xl">Full-Stack Developer</h1>
 
           <span class="inline mt-6 md:mt-0">
             <p class="inline font-serif text-2xl tracking-wider">I’m a </p>
@@ -62,7 +62,7 @@
         </div>
 
         <!-- Header image >= md -->
-        <div class="hidden ld:grid mb-36 w-96 h-96 md:ml-28 justify-self-center lg:block">
+        <div class="hidden ld:grid mb-36 w-80 h-80 xl:w-96 xl:h-96 md:ml-28 justify-self-center lg:block">
           <img src="imgs/computer.png" alt="me" height="500" width="500" class="rounded-full">
         </div>
 
@@ -72,10 +72,10 @@
     </section>
 
     <!-- Section 2: About -->
-    <section class="grid content-center min-h-screen text-lg md:space-y-6 md:text-base" id="about">
+    <section class="grid content-center min-h-screen md:space-y-6" id="about">
 
-      <div class="grid grid-cols-1 md:grid-cols-3 ">
-        <div class="col-span-1 space-y-3 md:space-y-4 md:col-span-2">
+      <div class="grid grid-cols-1 lg:grid-cols-3 ">
+        <div class="col-span-1 space-y-3 lg:space-y-4 lg:col-span-2">
 
           <!-- About title -->
           <div class="flex flex-row mb-10 js-show-on-scroll md:mb-0">
@@ -100,7 +100,7 @@
           </div>
 
           <!-- About bullets -->
-          <div class="md:grid md:grid-cols-2 js-show-on-scroll">
+          <div class="sm:grid sm:grid-cols-2 js-show-on-scroll">
             <div class="space-y-4">
               <p>A few technologies I know well:</p>
               <ul class="text-indigo-500 list-none">
@@ -131,7 +131,7 @@
     </section>
     
     <!-- Section 3: Projects -->
-    <section class="grid content-center min-h-screen pt-20 space-y-6 text:lg md:text-base" id="projects">
+    <section class="grid content-center min-h-screen pt-20 space-y-6" id="projects">
 
       <!-- Projects title -->
       <div class="w-full pb-6 md:w-2/3">
@@ -142,7 +142,7 @@
       </div>
 
       <!-- Wildlife Watcher -->
-      <div class="grid grid-cols-1 pb-12 text-lg md:pb-20 md:text-base md:grid-cols-2 text:lg">
+      <div class="grid grid-cols-1 pb-12 text-lg md:pb-20 md:grid-cols-2">
         <div class="grid grid-cols-1 gap-1 mr-0 md:mr-12 md:grid-cols-2">
           <div>
             <img src="imgs/wildlife-watcher.png" alt="Wildlife Watcher screenshot 1" class="hidden w-auto h-auto shadow md:flex">
@@ -209,7 +209,7 @@
         
         <!-- PHEM text -->
         <div>
-          <div class="mb-4 mr-6 space-y-4 text-lg js-show-on-scrol md:text-base">
+          <div class="mb-4 mr-6 space-y-4 js-show-on-scrol">
             <h3 class="font-serif text-2xl">PHEM - Mechatronics Engineering</h3>
             
             <a href="https://phem.com.au"  class="inline text-indigo-400">
@@ -230,7 +230,7 @@
           </div>
 
           <!-- PHEM bullets -->
-          <ul class="text-lg text-indigo-500 list-none js-show-on-scroll md:text-base">
+          <ul class="text-indigo-500 list-none js-show-on-scroll">
             <li>Wordpress</li>
             <li>Customised PHP theme</li>
           </ul>
@@ -246,9 +246,9 @@
       
       <!-- Contact title -->
         <div class="flex flex-row pb-8">
-          <div class="w-full mr-4 border-b-2 border-indigo-200 mb-7"></div>
+          <div class="w-full mr-4 border-indigo-200 sm:border-b-2 mb-7"></div>
           <h2 class="font-serif text-5xl font-bold tracking-wide text-center uppercase js-show-on-scroll">Contact</h2>
-          <div class="w-full ml-4 border-b-2 border-indigo-200 mb-7"></div>
+          <div class="w-full ml-4 border-indigo-200 sm:border-b-2 mb-7"></div>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
@@ -258,14 +258,14 @@
             <img src="imgs/headshot.png" alt="me" height="500" width="500" class="rounded-full">
           </div>
 
-          <!-- Contact image -->
-          <div class="grid mb-6 rounded-full justify-self-center w-45 h-45 md:hidden js-show-on-scroll">
-            <img src="imgs/headshot.png" alt="me" height="250" width="250" class="rounded-full">
+          <!-- Contact image mobile -->
+          <div class="grid mb-6 rounded-full w-18 h-18 justify-self-center sm:w-50 sm:h-50 md:hidden js-show-on-scroll">
+            <img src="imgs/headshot.png" alt="me" height="200" width="200" class="rounded-full">
           </div>
           
           <!-- Contact text and buttons -->
           <div class="grid items-center space-y-2">
-            <p class="px-16 mb-6 text-center js-show-on-scroll md:px-0 md:mb-0">
+            <p class="px-0 mb-6 text-center sm:px-16 js-show-on-scroll md:px-0 md:mb-0">
               I’d love the opportunity to meet for an interview and demonstrate my dedication and enthusiasm first-hand.
             </p>
             <div class="grid self-start justify-self-center">
